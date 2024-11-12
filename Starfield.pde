@@ -126,7 +126,7 @@ class Particle {
     //col=color(r,g,b);
     fill(col);
     noStroke();
-    circle(x,y,size);
+    ellipse(x,y,size,size);
   }
 }
 
@@ -223,15 +223,6 @@ void draw() {
   noStroke();
   text(round(frameRate),-width/2+50,-height/2+50);
 }
-
-void keyPressed() {
-  //redraw();
-}
-
-//member variables: 4, or maybe 6
-//member methods: 9
-//accessor methods: 4
-//local variables: 6
 
 void mousePressed() {
   mode=1;
